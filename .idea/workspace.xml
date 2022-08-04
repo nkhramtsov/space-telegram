@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ffd09e7-d19c-4706-8f3a-274867878375" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/images/spacex_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/spacex_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/spacex_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/spacex_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/spacex_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +123,7 @@
       <workItem from="1658159575939" duration="27000" />
       <workItem from="1658466291126" duration="599000" />
       <workItem from="1658643420058" duration="3536000" />
-      <workItem from="1659420745591" duration="25432000" />
+      <workItem from="1659420745591" duration="25763000" />
     </task>
     <servers />
   </component>

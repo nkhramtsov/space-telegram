@@ -26,7 +26,19 @@ To run the programm use the following command from the project directory:
 ```
 python main.py
 ```
+To download images from SpaceX use the following command from the project directory:
+```
+python fetch_spacex_images.py launch_id
+```
+Latest launch photos will be downloaded if *launch_id* is not set.
 
+To download images from NASA use the one of following commands:
+```
+python fetch_nasa_apod_images.py
+
+python fetch_nasa_epic_images.py
+```
+Don't forget to set your NASA API KEY.
 ### Project Goals
 
 The code is written for educational purposes on online-course for web-developers [Devman](https://dvmn.org).

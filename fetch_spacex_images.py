@@ -10,8 +10,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def fetch_spacex_launch(launch_id=None):
-    launch_id = 'latest' if launch_id is None else launch_id
+def fetch_spacex_launch(launch_id='latest'):
     spacex_api_url = f'https://api.spacexdata.com/v5/launches/{launch_id}'
 
     response = requests.get(spacex_api_url)

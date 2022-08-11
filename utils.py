@@ -8,7 +8,7 @@ def download_image(url, path, image_name, payload=None):
     response.raise_for_status()
 
     Path(path).mkdir(parents=True, exist_ok=True)
-    with open(f'{path}/{image_name}', 'wb') as file:
+    with open(Path(f'{path}/{image_name}'), 'wb') as file:
         file.write(response.content)
 
 

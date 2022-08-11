@@ -4,7 +4,7 @@ import os
 from utils import download_image, get_extension_from_url
 
 
-def fetch_nasa_apod(count=10):
+def fetch_nasa_apod(nasa_api_key, count=10):
     nasa_apod_api_url = 'https://api.nasa.gov/planetary/apod'
     apod_paylaod = {'count': count, 'api_key': nasa_api_key}
 
@@ -20,4 +20,4 @@ def fetch_nasa_apod(count=10):
 if __name__ == '__main__':
     load_dotenv()
     nasa_api_key = os.getenv('NASA_API_KEY')
-    fetch_nasa_apod()
+    fetch_nasa_apod(nasa_api_key)

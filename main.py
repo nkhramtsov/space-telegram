@@ -3,6 +3,7 @@ import random
 import os
 import telegram
 import time
+from pathlib import Path
 
 
 def post_image(bot, directory, image_name):
@@ -11,7 +12,8 @@ def post_image(bot, directory, image_name):
     caption = f'This photo provided by {source} API from {company_name} ' \
               f'and posted automatically for educational purposes.'
 
-    bot.send_photo(chat_id=chat_id, photo=open(f'{directory}/{image_name}', 'rb'), caption=caption)
+    with open(Path(f'{directory}/{image_name}'), 'rb') as photo:
+        bot.send_photo(chat_id=chat_id, photo=photo, caption=caption)
 
 
 if __name__ == '__main__':
@@ -28,6 +30,5 @@ if __name__ == '__main__':
         if not images:
             images = os.listdir(directory)
             random.shuffle(images)
-        post_image(bot, directory, images[-1])
-        images.pop()
+        post_image(bot, directory, images.pop())
         time.sleep(delay)

@@ -5,7 +5,7 @@ import os
 from utils import download_image
 
 
-def fetch_nasa_epic():
+def fetch_nasa_epic(nasa_api_key):
     nasa_epic_api_url = 'https://api.nasa.gov/EPIC/api/natural/images'
     epic_payload = {'api_key': nasa_api_key}
 
@@ -23,4 +23,4 @@ def fetch_nasa_epic():
 if __name__ == '__main__':
     load_dotenv()
     nasa_api_key = os.getenv('NASA_API_KEY')
-    fetch_nasa_epic()
+    fetch_nasa_epic(nasa_api_key)
